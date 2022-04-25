@@ -6,15 +6,10 @@ func _ready():
 	$AnimationPlayer.play("Idle")
 
 func _physics_process(_delta):
-	if not dead:
-		if $AnimationPlayer.current_animation == "Idle" and randf() < 0.01:
-			$AnimationPlayer.play("Attack")
-
+	pass
+	
 func die():
-	if not dead:
-		$AnimationPlayer.play("Death")
-		dead = true
+	queue_free()
 
 func _on_AnimationPlayer_animation_finished(anim_name):
-	if anim_name != "Death":
-		$AnimationPlayer.play("Idle")
+	$AnimationPlayer.play("Idle")
