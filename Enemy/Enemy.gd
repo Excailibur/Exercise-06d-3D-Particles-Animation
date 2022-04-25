@@ -11,5 +11,5 @@ func _physics_process(_delta):
 func die():
 	queue_free()
 
-func _on_AnimationPlayer_animation_finished(anim_name):
+func _on_AnimationPlayer_animation_finished(_anim_name):
 	$AnimationPlayer.play("Idle")

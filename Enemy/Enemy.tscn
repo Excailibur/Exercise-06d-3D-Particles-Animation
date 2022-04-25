@@ -4872,7 +4872,7 @@ skin = SubResource( 3 )
 material/0 = SubResource( 4 )
 
 [node name="Boneattachment" type="BoneAttachment" parent="Root/Skeleton"]
-transform = Transform( -0.798055, 0.123308, 0.589843, 0.453333, -0.522022, 0.722487, 0.396995, 0.843971, 0.360702, -0.687962, 1.33988, 0.115004 )
+transform = Transform( -0.795505, 0.122213, 0.593504, 0.462609, -0.510123, 0.725102, 0.391373, 0.851374, 0.349269, -0.68947, 1.34759, 0.103695 )
 bone_name = "right_hand_thumb_1"
 
 [node name="Knife" type="MeshInstance" parent="Root/Skeleton/Boneattachment"]
